@@ -1,0 +1,65 @@
+.principal{
+	background-color :  $ColorBGblanco;
+
+	.principal-cont{
+		display : flex;
+		justify-content : center;
+		//flex-direction : row;
+		margin-top : 90px;
+		margin-bottom : 100px; 
+
+		&_img{
+			margin-top : 10px;
+		}
+
+		/*&_info{
+			display : flex; 
+			justify-content : center;
+			margin-top : 110px;
+
+			&_text{
+				display : flex; 
+				justify-content : center;
+				padding : 75px;
+
+				&_desc{
+					font-size : 22px;
+					font-weight : bolder;
+				}
+			}
+		}*/
+	}
+}
+
+@media (max-width : $tabletas){
+	.principal{
+		background-color :  $ColorBGblanco;
+
+		.principal-cont{
+			display : flex;
+			justify-content : center;
+			margin-top : 90px; 
+
+			&_img{
+				margin-top : 10px;
+			}
+
+			/*&_info{
+				display : flex; 
+				justify-content : center;
+				margin-top : 1px;
+
+				&_text{
+					display : flex; 
+					justify-content : center;
+					padding : 35px;
+
+					&_desc{
+						font-size : 20px;
+						text-align : justify;
+					}
+				}
+			}*/
+		}
+	}
+}

@@ -1,0 +1,262 @@
+.servicios{
+	background-color : $ColorRosa;
+	//margin-top : 110px;
+
+	.servicios-cont{
+		display : flex; 
+		flex-direction : column;
+		margin-top : 70px; 
+		margin-bottom : 70px;
+
+		.servicios-titulo{
+			display : flex;
+			flex-direction: column;
+
+			.servicios-titulo-cont{
+				display : flex; 
+				flex-direction: column;
+
+				&_titulo{
+					display : flex; 
+					justify-content: center;
+
+					&_color{
+						//color : $ColorLetraN;
+						color : $ColorLetraB;
+					}
+				}
+
+				&_span{
+					display : flex; 
+					justify-content : center;
+				}
+			}
+		}
+
+		&_conte{
+			display : flex; 
+			justify-content : center;
+			margin-top : 60px;
+
+			&_conten{
+				display : flex; 
+				flex-direction : row;
+
+				&_elem{
+					display : flex; 
+					flex-direction : row;
+					width : 50%;
+
+					&_item{
+						display : flex; 
+						flex-direction : column;
+						padding : 40px;
+
+						&_logo{
+							display : flex; 
+							justify-content : center;
+							margin-bottom : 25px;
+						}
+
+						&_descrip{
+							display : flex; 
+							justify-content : center;
+
+							&_descripcon{
+								display : flex; 
+								justify-content : center;
+								width : 100%;
+
+								&_text{
+									text-align : center;
+									color : rgb(247, 249, 249);
+									//color: $Negrobgcolor;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 825px){
+	.servicios{
+		background-color : $ColorBG;
+		//margin-top : 80px;
+
+		.servicios-cont{
+			display : flex; 
+			flex-direction : column;
+			margin-top : 70px; 
+			margin-bottom : 70px;
+
+			.servicios-titulo{
+				display : flex;
+				flex-direction: column;
+
+				.servicios-titulo-cont{
+					display : flex; 
+					flex-direction: column;
+
+					&_titulo{
+						display : flex; 
+						justify-content: center;
+
+						&_color{
+							//color : $ColorLetraN;
+							color : $ColorLetraB;
+						}
+					}
+
+					&_span{
+						display : flex; 
+						justify-content : center;
+					}
+				}
+			}
+
+			&_conte{
+				display : flex; 
+				justify-content : center;
+				margin-top : 60px;
+
+				&_conten{
+					display : flex; 
+					flex-direction : column;
+
+					&_elem{
+						display : flex; 
+						flex-direction : row;
+						width : 100%;
+						margin-bottom : 20px;
+
+						&_item{
+							display : flex; 
+							flex-direction : column;
+							padding : 20px;
+
+							&_logo{
+								display : flex; 
+								justify-content : center;
+								margin-bottom : 25px;
+							}
+
+							&_descrip{
+								display : flex; 
+								justify-content : center;
+
+								&_descripcon{
+									display : flex; 
+									justify-content : center;
+									width : 100%;
+
+									&_text{
+										text-align : center;
+										//color: $Negrobgcolor;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : $moviles){
+	.servicios{
+		background-color : $ColorBG;
+		//margin-top : 80px;
+
+		.servicios-cont{
+			display : flex; 
+			flex-direction : column;
+			margin-top : 70px; 
+			margin-bottom : 50px;
+
+			.servicios-titulo{
+				display : flex;
+				flex-direction: column;
+
+				.servicios-titulo-cont{
+					display : flex; 
+					flex-direction: column;
+
+					&_titulo{
+						display : flex; 
+						justify-content: center;
+
+						&_color{
+							//color : $ColorLetraN;
+							color : $ColorLetraB;
+							font-size: 1.5em;
+						}
+					}
+
+					&_span{
+						display : flex; 
+						justify-content : center;
+					}
+				}
+			}
+
+			&_conte{
+				display : flex; 
+				justify-content : center;
+				margin-top : 60px;
+
+				&_conten{
+					display : flex; 
+					flex-direction : column;
+
+					&_elem{
+						display : flex; 
+						//flex-direction : row;
+						flex-direction : column;
+						width : 100%;
+						margin-bottom : 20px;
+
+						&_item{
+							display : flex; 
+							//flex-direction : column;
+							flex-direction : row;
+							padding : 10px;
+
+							&_logo{
+								display : flex; 
+								//justify-content : center;
+								justify-content : flex-start; 
+								margin-bottom : 25px;
+								width : 100%;//nuevo
+							}
+
+							&_descrip{
+								display : flex; 
+								//justify-content : center;
+								justify-content : flex-start;
+								width : 100%;
+
+								&_descripcon{
+									display : flex; 
+									//justify-content : center;
+									justify-content : flex-start;
+									width : 100%;
+									margin-top : 25px;//nuevo
+
+									&_text{
+										text-align : left;
+										font-size : 16px;
+										//color: $Negrobgcolor;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

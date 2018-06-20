@@ -1,0 +1,245 @@
+.topBar{
+	height           : 90px;//60
+	display          : flex;
+	align-items      : center;
+	background-color : $Colormenu;
+	position         : fixed;//Se posiciona a la ventana del navegador de manera relativa, esto es que se mantendra en el mismo lugar cuando se usa scroll
+	top: 0;//Posiciona al elemento en la parte superior de la ventana
+	z-index          : 1000;//Sobrepone al elemento sobre todos los elementos de la pagina
+	width            : 100%;//Le damos el 100% de la pantalla al elemento
+
+	.menu_bar{
+		display : none;
+	}
+
+	.cont-menu{
+		display         : flex;
+		justify-content : space-between;
+
+		.cont-menu_logo{
+			display         : flex; 
+			justify-content : space-between;
+			width : 100px;;//100px;//NUEVO
+			height : 90px;//NUEVO
+
+			&_contenido{
+				padding : 20px;
+			}
+		}
+
+		.cont-menu_menu{
+			.menu-ul{
+				display        : flex; 
+				flex-direction : row;
+				list-style     : none; 
+
+				.menu-ul_li{
+					margin-top : 40px;//16px;
+					list-style     : none;
+
+					&_a{
+						color      : $ColorLetra;
+						font-size  : 18px;//16
+						transition : all 0.7s ease;
+						padding    : 20px;
+
+						&:hover{
+							border-radius    : 4px;
+							background-color : $Colorhovermenu;
+							color            : $Colorletramenu;
+						}
+					}
+				}
+			}
+		}	
+	}
+}
+
+@media (max-width : $tabletas){
+	.topBar{
+		.menu_bar{
+			display : block; 
+			display: flex;
+			justify-content : space-between;
+
+			.cont-menu_logo{
+				display: flex; 
+				justify-content: space-between;
+				width : 100px;//65px;//NUEVO
+				height : 90px;//55px;//NUEVO
+				margin-left : 20px;
+
+				&_contenido{
+					padding : 20px;
+				}
+			}
+
+			.cont-menu_menu{
+				.btn_menu{
+					padding: 17px;//20px
+					font-size: 25px;
+					color : $ColorLetra;
+					transition: all 0.7s ease;
+					margin-top: 18px;//NUEVO
+
+					&:hover{
+						color: $Colorhovermenu;
+					}
+				}
+			}
+		}
+
+		.cont-menu{
+			display : block;
+			width: 40%;
+			height: calc(100% - 60px);//height: calc(100% - 80px);
+			position : fixed;
+			right: 100%;
+			margin: 0; 
+			background-color: $Colormenu;
+			//border: 1px solid rgba(255,255,255,.5);
+			overflow: scroll;
+
+			.cont-menu_logo{
+				display: none;
+			}
+
+			.cont-menu_menu{
+				margin-top: 8px;
+				.menu-ul{
+					display: flex; 
+					flex-direction: column;
+					list-style : none; 
+
+					.menu-ul_li{
+						margin-top: 0px;
+						display: block;
+						border-bottom : 1px solid rgba(255,255,255,.5);
+
+						&_a{
+							color : $ColorLetra;
+							font-size: 18px;
+							transition: all 0.7s ease;
+							padding: 30px;
+							display: block;
+
+							&:hover{
+								border-radius: 4px;
+								background-color :  $Colorhovermenu;
+								color : $Colorletramenu;
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+@media (max-width : $moviles){
+	.topBar{
+		height: 60px;//NUEVO
+
+		.menu_bar{
+			display : block; 
+			display: flex;
+			justify-content: space-between;
+
+			.cont-menu_logo{
+				display: flex; 
+				justify-content: space-between;
+				width : 65px;//NUEVO
+				height : 55px;//NUEVO
+
+				&_contenido{
+					padding : 20px;
+				}
+			}
+
+			.cont-menu_menu{
+				.btn_menu{
+					padding: 17px;//20px
+					font-size: 25px;
+					color : $ColorLetra;
+					transition: all 0.7s ease;
+					margin-top: 0px;//NUEVO
+
+					&:hover{
+						color:$Colorhovermenu;
+					}
+				}
+			}
+		}
+
+		.cont-menu{
+			display : block;
+			width: 55%;
+			height: calc(100% - 60px);//height: calc(100% - 80px);
+			position : fixed;
+			//right: 100%;
+			right:100%;
+			margin: 0; 
+			overflow: scroll;
+			background-color: $Colormenu;
+
+			.cont-menu_logo{
+				display: none;
+			}
+
+			.cont-menu_menu{
+				margin-top: 8px;
+				.menu-ul{
+					display: flex; 
+					flex-direction: column;
+					list-style : none; 
+
+					.menu-ul_li{
+						margin-top: 0px;
+						display: block;
+						border-bottom : 1px solid rgba(255,255,255,.5);
+
+						&_a{
+							color : $ColorLetra;
+							font-size: 15px;
+							transition: all 0.7s ease;
+							padding: 30px;
+							display: block;
+
+							&:hover{
+								border-radius: 4px;
+								background-color : $Colorhovermenu;
+								color : $Colorletramenu;
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+
+::-webkit-scrollbar 
+{
+    width: 12px;	
+}
+::-webkit-scrollbar-button:hover
+{
+	background-color: #A4A4A4;	 
+}	 
+::-webkit-scrollbar-track 
+{
+    background-color: #D8D8D8;
+}
+ ::-webkit-scrollbar-track-piece 
+{
+	background-color: #D8D8D8;
+}	
+::-webkit-scrollbar-thumb 
+{		
+	background: #A4A4A4;
+	height: 50px;
+}
+::-webkit-scrollbar-thumb:hover 
+{		
+	background: #585858;	
+}   	

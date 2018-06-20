@@ -1,0 +1,145 @@
+.contacto{
+	background-color : $Colorcontacto;
+
+	.contacto-cont{
+		display: flex; 
+		flex-direction: column;
+		margin-top: 10px;
+
+		.contacto-cont_info{
+			display: flex; 
+			justify-content: space-between;
+
+			&_redes{
+				display: flex;
+				justify-content: space-between;
+				width : 100%;
+
+				&_visitanos{
+					display: flex; 
+					flex-direction: column;
+					width : 100%;
+
+					&_cont{
+						display : flex;
+						justify-content: flex-start;
+
+						&_tit{
+							color : $ColorLetraN;
+							font-size: 16px;
+						}
+					}
+
+					&_elem{
+						display : flex;
+						flex-direction: column;
+
+						&_uno{
+							display: flex;
+							flex-direction: row;
+
+							&_icono{
+								margin : 3px;
+								color : $ColorLetraN;
+								font-size: 16px;
+
+								&:hover{
+									color : $Colorbase;
+								}
+							}
+
+							&_text{
+								margin : 3px;
+								color : $ColorLetraN;
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.contacto-cont_derechos{
+			display: flex;
+			justify-content: center;
+			//margin-top : 10px;
+			padding : 5px;
+
+			&_texto{
+				color : $ColorLetraN;
+				font-size: 12px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width : $moviles){
+	.contacto{
+
+		.contacto-cont{
+			display: flex; 
+			flex-direction: column;
+			margin-top: 20px;
+
+			.contacto-cont_info{
+				display: flex; 
+				flex-direction: column;
+				align-items: center;
+				//justify-content: space-between;
+
+				&_redes{
+					display: flex;
+					flex-direction: column;
+
+					&_visitanos{
+						display: flex; 
+						flex-direction: column;
+						width : 100%;
+						//margin : 0px;//3px
+						padding : 5px;
+
+
+						&_cont{
+							display : flex;
+							justify-content: flex-start;
+
+							&_tit{
+								color : $ColorLetraN;
+								font-size: 16px;
+							}
+						}
+
+						&_elem{
+							display : flex;
+							flex-direction: column;
+							//flex-direction: row;//Nuevo
+
+							&_uno{
+								display: flex;
+								flex-direction: row;
+								margin : 3px;//Nuevo
+
+								&_icono{
+									margin : 3px;//3px
+									color : $ColorLetraN;
+									font-size: 16px;
+
+									&:hover{
+										color : $Colorbase;
+									}
+								}
+
+								&_text{
+									margin : 3px;//3px
+									color : $ColorLetraN;
+									font-size: 14px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}

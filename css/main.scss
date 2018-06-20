@@ -1,0 +1,82 @@
+//Colores documento
+$ColorBG        : rgb(202, 32, 94);//rgb(234, 237, 237);//rgb(236, 240, 241);//white;//rgb(208, 211, 212);//Color de fondo
+$ColorBGblanco  : rgb(248, 248, 248);
+$Colorbase      : rgb(190,31,89);//rgb(163,8,8);//Color base de la página
+$ColorRosa      : rgb(222, 61, 129);
+
+//Propiedades de letras y fuentes
+$ColorLetra     : black;//rgb(98, 101, 103);//rgb(178, 186, 187);
+$ColorLetraN    : rgb(51, 51, 51);
+$ColorLetraB    : white;
+$ColorLetraG    : rgb(179, 182, 183);//rgb(144, 148, 151);
+$Tamanoletras   : 20px; 
+$FontLetra      : 'Open Sans', sans-serif;
+
+//Propiedades de formularios
+$ColorFomulario : rgb(247, 249, 249);//rgb(236, 240, 241); 
+$ColorBotones   : rgb(179, 182, 183);
+$Colorhoverbotones : rgb(208, 211, 212);
+
+//Propiedades de menu
+$Colormenu      : white;//rgb(253, 254, 254);//rgb(252,239,248);//rgb(252,239,248);//rgb(253,237,248);//rgb(247, 249, 249);//rgb(240, 243, 244);//rgb(236, 240, 241);
+$Colorhovermenu : rgb(190,31,89);//rgb(222,158,175);//rgb(238,128,169);//rgb(190,31,89);
+$Colorletramenu : white;
+
+//Propiedades titulos 
+$Colortitulos   : rgb(44, 62, 80); 
+
+//Color de secciones
+//$Colorindex : rgb(236, 240, 241);
+$Colorcontacto  : rgb(229, 231, 233);//rgb(208, 211, 212);//#2E2E2E;//rgb(179, 182, 183);//rgb(208, 211, 212);
+
+// Estilos imagenes
+$mx-width : 100%;
+
+//Estilos de enlaces 
+$link--color : initial;
+
+// Tamaños de los encabezados
+$h1 : 3.5em;
+$h2 : 3em;
+$h3 : 2.5em;
+$h4 : 2em;
+$h5 : 1.5em;
+$h6 : 1em;
+
+// Estilos parrafos
+$p--fz  : 18px;
+$p--lh  : 1.5em;
+
+// Variables para los pesos de las fuentes
+$light  : 300;
+$normal : 400;
+$bold   : 700;
+
+//Resoluciones de pantalla
+$moviles : 480px;//768px / 320px
+$tabletas : 992px;//992px
+$pcs : 1200px;
+
+//Estilos generales en seccion nosotros
+$Blancobgcolor : white; 
+$Colortitulonos : black;
+
+///Imports de archivos de estilos para páginas 
+@import "base/_reset";
+@import "base/_base"; 
+@import "module/_module";
+@import "font-awesome-4.7.0/scss/font-awesome";
+@import "layout/_menu";
+@import "layout/_principal";
+@import "layout/_contacto";
+@import "layout/nosotros/_acerca";
+@import "layout/nosotros/_valores";
+@import "layout/_servicios";
+@import "layout/_video";
+@import "layout/_aliados";
+@import "layout/_patrocinador";
+@import "layout/_carousel";
+/*@import "layout/_contacto";
+@import "layout/_carousel";
+@import "layout/_servicios";
+@import "layout/contacto/_formulario";*/

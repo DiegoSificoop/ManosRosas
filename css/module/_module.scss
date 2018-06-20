@@ -1,0 +1,22 @@
+.m-section{
+	display : flex;
+	justify-content : center;
+}
+
+.m-center{
+	width : 1100px;
+}
+
+.m_lineBottom_azul{
+    border-bottom : 4px solid  $Colorbase;
+    display       : inline-block;
+    width         : 150px;
+    padding       : 1.5rem 0 0;
+ }
+
+ .m_lineBottom_negro{
+    border-bottom : 4px solid white;
+    display       : inline-block;
+    width         : 150px;
+    padding       : 1.5rem 0 0;
+ }

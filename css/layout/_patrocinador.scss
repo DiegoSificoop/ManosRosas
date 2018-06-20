@@ -1,0 +1,182 @@
+.patrocinador{
+	//margin-top : 110px;
+	background-color: $ColorBGblanco;
+
+	.patrocinador-cont{
+		display : flex; 
+		flex-direction : column;
+		margin-top : 70px; 
+		margin-bottom : 70px;
+
+		.patrocinador-cont-titulo{
+			display : flex;
+			flex-direction: column;
+
+			.patrocinador-cont-titulo-cont{
+				display : flex; 
+				flex-direction: column;
+
+				&_titulo{
+					display : flex; 
+					justify-content: center;
+
+					&_color{
+						color : $ColorLetraN;
+
+					}
+				}
+
+				&_span{
+					display : flex; 
+					justify-content : center;
+				}
+			}
+		}
+	}
+
+	.patrocinador-cont_conte{
+		display : flex; 
+		justify-content : center;
+		margin-top : 50px;
+
+		&_contene{
+			display : flex; 
+			flex-direction : row;
+
+			&_item{
+				display : flex;
+				justify-content : space-between;
+				//flex-direction : row;
+
+				&_img{
+					//width : 220px;
+					padding : 10px;
+
+					&_coca{
+						width : 90px;//110
+						margin-top : 20px;
+					}
+
+					&_ed{
+						width : 210px;//250
+					}
+
+					&_das{
+						width : 210px;//250
+					}
+
+					&_iv{
+						width : 140px;//180
+					}
+
+					&_za{
+						width : 180px;//220
+						margin-top : 20px;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+@media (max-width : 800px){
+	.patrocinador{
+		//margin-top : 30px;
+
+		.patrocinador-cont{
+			display : flex; 
+			flex-direction : column;
+			margin-top : 50px; 
+			//margin-bottom : 70px;
+			margin-bottom : 0;
+
+			.patrocinador-cont-titulo{
+				display : flex;
+				flex-direction: column;
+
+				.patrocinador-cont-titulo-cont{
+					display : flex; 
+					flex-direction: column;
+
+					&_titulo{
+						display : flex; 
+						justify-content: center;
+
+						&_color{
+							color : $ColorLetraN;
+							font-size: 1.5em;
+							text-align : center;
+						}
+					}
+
+					&_span{
+						display : flex; 
+						justify-content : center;
+					}
+				}
+			}
+		}
+
+		.patrocinador-cont_conte{
+			display : flex; 
+			justify-content : center;
+			margin-top : 25px;
+
+			&_contene{
+				display : flex; 
+				flex-direction : column;
+
+				&_center{
+					display : flex; 
+					justify-content : center;
+					width : 100%;
+
+					&_img{
+						padding : 10px;
+
+						&_ed{
+							width : 210px;						
+						}
+					}
+				}
+
+				&_item{
+					display : flex;
+					//justify-content : space-between;
+					flex-direction : column;
+					width : 100%;
+					//flex-direction : row;
+
+					&_img{
+						//width : 220px;
+						display : flex;
+						justify-content : center;
+						padding : 10px;
+
+						&_coca{
+							width : 90px;
+						}
+
+						&_ed{
+							width : 210px;						
+						}
+
+						&_das{
+							width : 210px;
+						}
+
+						&_iv{
+							width : 140px;
+						}
+
+						&_za{
+							width : 180px;
+							//margin-left : 80px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
